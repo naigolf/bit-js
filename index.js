@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 var request = require('request');
 const app = express();
 const https = require('https');
-var encoding = require("encoding");
+
 
 app.set('port', (process.env.PORT || 5000)) 
 app.use(bodyParser.urlencoded({extended: false}))
