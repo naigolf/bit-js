@@ -1,0 +1,21 @@
+{
+  "name": "bit-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "qrcode": "^0.9.0",
+    "promptpay-qr": "^0.4.4",
+    "bitkub": "1.0.0"
+  }
+}
