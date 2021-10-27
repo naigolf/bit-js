@@ -18,6 +18,11 @@ app.listen(app.get('port'), function() {
 var my_api_key = process.env.my_api_key;
 var my_api_secret = process.env.my_api_secret;
 
+/////////////////////////////////////////////////////////////////////
+
+app.get('/', function (req, res) {
+        res.end('card AI')
+    })
 
 var Bitkub = require('bitkub')
 var client = new Bitkub({
@@ -25,6 +30,14 @@ var client = new Bitkub({
   api_secret: my_api_secret,
 })
 
-client.server_time().then(server_time => {
-  console.log(server_time)
+
+//////////////////////////////////////////////////////////////////
+
+app.get('/time', function (req, res) {
+    
+    client.server_time().then(server_time => {
+  console.log("server_time"+server_time)
+ })
+  res.end("server_time"+server_time)
 })
+
