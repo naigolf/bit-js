@@ -59,7 +59,7 @@ var client = new Bitkub({
 
 data = {
 	'sym': 'THB_BTC',
-	'amt': 10, # THB amount you want to spend
+	'amt': 10, 
 	'rat': 260000,
 	'typ': 'limit'
 }
