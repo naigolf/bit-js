@@ -35,8 +35,11 @@ var client = new Bitkub({
 })
     
     client.server_time().then(server_time => {
-  console.log("server_time"+server_time)
- })
-  res.end("server_time"+server_time)
+  console.log("server_time_log"+server_time)
+ 
+  res.end("server_time_res"+server_time)
+        
+        })
+        
 })
 
