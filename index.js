@@ -43,3 +43,35 @@ var client = new Bitkub({
         
 })
 
+
+
+
+//////////////////////////////////////////////////////////////////
+
+app.get('/buy', function (req, res) {
+    
+    var Bitkub = require('bitkub')
+var client = new Bitkub({
+  api_key: my_api_key,
+  api_secret: my_api_secret,
+})
+
+
+data = {
+	'sym': 'THB_BTC',
+	'amt': 10, # THB amount you want to spend
+	'rat': 260000,
+	'typ': 'limit'
+}
+    
+    
+    
+    client.market_place_bid().then(data => {
+  console.log("bit"+req.body)
+ 
+  //res.end("bit"+server_time)
+        
+        })
+        
+})
+
