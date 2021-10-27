@@ -21,19 +21,18 @@ var my_api_secret = process.env.my_api_secret;
 /////////////////////////////////////////////////////////////////////
 
 app.get('/', function (req, res) {
-        res.end('card AI')
+        res.end('AI')
     })
-
-var Bitkub = require('bitkub')
-var client = new Bitkub({
-  api_key: my_api_key,
-  api_secret: my_api_secret,
-})
-
 
 //////////////////////////////////////////////////////////////////
 
 app.get('/time', function (req, res) {
+    
+    var Bitkub = require('bitkub')
+var client = new Bitkub({
+  api_key: my_api_key,
+  api_secret: my_api_secret,
+})
     
     client.server_time().then(server_time => {
   console.log("server_time"+server_time)
