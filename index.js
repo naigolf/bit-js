@@ -57,7 +57,7 @@ var client = new Bitkub({
 })
 
 
-const data = {
+const data : {
 	sym: 'THB_BTC',
 	amt: 10, 
 	rat: 260000,
