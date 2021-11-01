@@ -66,7 +66,7 @@ const data = {
     
     
     
-    client.market_place_bid(data).then(server_time => {
+    client.market_place_bid().then(data => {
         })
         
 })
