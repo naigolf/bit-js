@@ -57,17 +57,17 @@ var client = new Bitkub({
 })
 
 
-const data : {
-	sym: 'THB_BTC',
+
+var data = {
+    	sym: "THB_BTC",
 	amt: 10, 
 	rat: 260000,
-	typ: 'limit' 
-
-}
+	typ: "limit"
+  }
     
-
+var str = jQuery.param(data);
     
-    client.market_place_bid().then(data => {
+    client.market_place_bid().then(str => {
         })
         
 })
