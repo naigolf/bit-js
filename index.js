@@ -61,12 +61,19 @@ const data = {
 	sym: 'THB_BTC',
 	amt: 10, 
 	rat: 260000,
+	typ: 'limit' 
 
 }
     
-   //	typ: 'limit' 
+
     
-    client.market_place_bid().then(data => {
+    client.market_place_bid().then({
+	sym: 'THB_BTC',
+	amt: 10, 
+	rat: 260000,
+	typ: 'limit' 
+
+} => {
         })
         
 })
