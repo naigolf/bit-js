@@ -66,7 +66,12 @@ const data = {
     
     
     
-    client.market_place_bid(data).then( => {
+    client.market_place_bid(parameters: {
+    sym: 'THB_BTC'
+    amt: 10,
+    rat: 260000
+    typ: 'limit'
+  }).then( market_place_bid => {
 	    
 	    
   //console.log("bit"+req.body)
