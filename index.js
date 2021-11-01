@@ -69,7 +69,7 @@ var data = {
     
 
     
-    client.market_place_bid().then(data[parameters] => {
+    client.market_place_bid().then(data => {
         })
         
 })
