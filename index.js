@@ -58,17 +58,18 @@ var client = new Bitkub({
 
 
 var data = {
-	'sym': 'THB_BTC',
-	'amt': 10, 
-	'rat': 260000,
-	'typ': 'limit'
+	sym: 'THB_BTC',
+	amt: 10, 
+	rat: 260000,
+	typ: 'limit'
 }
     
     
     
     client.market_place_bid(data).then(market_place_bid => {
-  console.log("bit"+req.body)
- 
+	    
+	    
+  //console.log("bit"+req.body)
   //res.end("bit"+server_time)
         
         })
