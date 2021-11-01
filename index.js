@@ -66,13 +66,10 @@ const data = {
     
     
     
-    client.market_place_bid(data).then(data => {
-	    
-	    
-  //console.log("bit"+req.body)
-  //res.end("bit"+server_time)
-        
-        })
+    client.market_place_bid(data).then(function (response) {
+    // handle success
+    console.log(response);
+  })
         
 })
 
