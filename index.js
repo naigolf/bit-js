@@ -50,7 +50,7 @@ var client = new Bitkub({
 
 app.get('/buy', function (req, res) {
     
-    var Bitkub = require('bitkub')
+var Bitkub = require('bitkub')
 var client = new Bitkub({
   api_key: my_api_key,
   api_secret: my_api_secret,
@@ -63,7 +63,6 @@ var data = {
 	amt: 10, 
 	rat: 260000,
 	typ: "limit"
-
   }
     
     client.market_place_bid().then(data => {
