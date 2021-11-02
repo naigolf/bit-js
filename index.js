@@ -58,14 +58,14 @@ var client = new Bitkub({
 
 
 
-var data = {
+var data = parameters({
     	sym: "THB_BTC",
 	amt: 10, 
 	rat: 260000,
 	typ: "limit"
-  }
+  })
     
-    client.place_bid().then(data => {
+    client.market_place_bid().then(data => {
         })
         
 })
