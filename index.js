@@ -65,7 +65,7 @@ var data = {
 	typ: "limit"
   }
     
-    client.market_place_bid().then(data => {
+    client.place_bid().then(data => {
         })
         
 })
