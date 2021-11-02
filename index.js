@@ -54,7 +54,7 @@ var Bitkub = require('bitkub')
 var client = new Bitkub({
   api_key: my_api_key,
   api_secret: my_api_secret,
-})
+	})
 
 
 
@@ -64,9 +64,14 @@ var data = ({
 	rat: 260000,
 	typ: "limit"
   })
-    
+
+/*
     client.market_place_bid().then(data => {
-        })
+        })	
+*/	
+
+client.market_place_bid().then(data => {
+        })	
         
 })
 
